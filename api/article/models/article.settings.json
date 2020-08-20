@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "articles",
   "info": {
@@ -30,6 +31,14 @@
     "category": {
       "model": "category",
       "via": "articles"
+    },
+    "autor": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "articles"
+    },
+    "show": {
+      "type": "boolean"
     }
   }
 }
