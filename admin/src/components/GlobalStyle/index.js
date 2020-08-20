@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.stnk.color.subtext} !important;
   }
 
-  .sc-pbzxR.kJUBgo, .sc-oUPCf.ebAblq, .wrapper, .modal-content, .dhjhIM, .hBvdqi{
+  .wrapper, .modal-content, .row > .col-md-9 > div:nth-child(2){
     background-color: ${(props) => props.theme.stnk.color.info} !important;
     color: ${(props) => props.theme.stnk.color.subtext} !important;
     border-radius: ${(props) => props.theme.stnk.radius.big} !important;
@@ -60,21 +60,6 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: none;
   }
 
-  .sc-fzoMdx.eIOvFP{
-    height: 4em;
-    background-color: ${(props) => props.theme.stnk.color.info};
-    border-right: none;
-    margin-top: ${(props) => props.theme.stnk.height.small};
-    border-radius: ${(props) => props.theme.stnk.radius.medium};
-    padding: ${(props) => props.theme.stnk.height.small} 1em;
-    & > div:first-child{
-      height: unset;
-    }
-    .sc-fzqLLg.XPknH {
-      margin: unset;
-      color:  ${(props) => props.theme.stnk.color.primary};
-    }
-  }
 
   button[type="button"], button[type="submit"] {
     border-radius: ${(props) => props.theme.stnk.radius.small};
