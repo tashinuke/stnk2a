@@ -20,9 +20,140 @@ const GlobalStyle = createGlobalStyle`
       color: ${(props) => props.theme.stnk.color.subtext};
     }
   }
+  .openBtn > button {
+    box-shadow: none !important;
+  }
   .sc-fznAgC {
     border: none !important;
     background-color: transparent !important;
+  }
+
+  div[style="background-color: white; padding-bottom: 0px;"], .sticky-wrapper.sticky{
+    background-color: ${(props) => props.theme.stnk.color.main} !important;
+    color: ${(props) => props.theme.stnk.color.subtext} !important;
+  }
+
+  .sc-pbzxR.kJUBgo, .sc-oUPCf.ebAblq, .wrapper, .modal-content, .dhjhIM, .hBvdqi{
+    background-color: ${(props) => props.theme.stnk.color.info} !important;
+    color: ${(props) => props.theme.stnk.color.subtext} !important;
+    border-radius: ${(props) => props.theme.stnk.radius.big} !important;
+    box-shadow: none !important;
+    .frame {
+      border: none !important;
+    }
+    .cardTitle {
+      color: ${(props) => props.theme.stnk.color.text} !important;
+    }
+    .sc-pQQAz.kdRfcL{
+      background-color: transparent;
+      border: 2px solid ${(props) => props.theme.stnk.color.border};
+      border-radius: ${(props) => props.theme.stnk.radius.medium};
+      color: ${(props) => props.theme.stnk.color.text} !important;
+    }
+    .cardFooter, section, .sc-oTmZL.hhHuUC {
+      background-color: transparent !important;
+      color: ${(props) => props.theme.stnk.color.subtext} !important;
+    }
+  }
+
+  div.ebAblq, table.table {
+    box-shadow: none;
+  }
+
+  .sc-fzoMdx.eIOvFP{
+    height: 4em;
+    background-color: ${(props) => props.theme.stnk.color.info};
+    border-right: none;
+    margin-top: ${(props) => props.theme.stnk.height.small};
+    border-radius: ${(props) => props.theme.stnk.radius.medium};
+    padding: ${(props) => props.theme.stnk.height.small} 1em;
+    & > div:first-child{
+      height: unset;
+    }
+    .sc-fzqLLg.XPknH {
+      margin: unset;
+      color:  ${(props) => props.theme.stnk.color.primary};
+    }
+  }
+
+  button[type="button"], button[type="submit"] {
+    border-radius: ${(props) => props.theme.stnk.radius.small};
+    border: none;
+    & > p {
+      color: ${(props) => props.theme.stnk.color.text} !important;
+    } 
+    &[color="success"], &[color="primary"], &[kind="primary"] {
+      color: ${(props) => props.theme.stnk.color.text} !important;
+      background-color: ${(props) => props.theme.stnk.color.primary};
+    }
+
+  }
+  input[type="checkbox"] {
+    & + span {
+      border-top-left-radius: ${(props) => props.theme.stnk.radius.small};
+      border-bottom-left-radius: ${(props) => props.theme.stnk.radius.small};
+      & + span {
+        border-top-right-radius: ${(props) => props.theme.stnk.radius.small} !important;
+        border-bottom-right-radius: ${(props) => props.theme.stnk.radius.small} !important;
+      }
+    }
+    &:checked{ 
+      & + span {
+        background-color: ${(props) => props.theme.stnk.color.border};
+        & + span {
+          background-color: ${(props) => props.theme.stnk.color.primary};
+        } 
+      }
+    }
+    &:not(:checked){
+      & + span {
+        background-color: ${(props) => props.theme.stnk.color.error};
+        & + span {
+          background-color: ${(props) => props.theme.stnk.color.border};
+        } 
+      }
+    }
+  }
+
+  label {
+    & + {
+      div {
+        border: none !important;
+      }
+    }
+    color: ${(props) => props.theme.stnk.color.text} !important;
+  }
+
+
+  .bzukQN div.dropdown-menu {
+    background-color: ${(props) => props.theme.stnk.color.info}; 
+    border-radius: ${(props) => props.theme.stnk.radius.small};
+    border-top-left-radius: ${(props) => props.theme.stnk.radius.small} !important;
+    border-top-right-radius: ${(props) => props.theme.stnk.radius.small} !important;
+    box-shadow: none;
+    border: 2px solid ${(props) => props.theme.stnk.color.border} !important;
+    .dropdown-item:hover, .dropdown-item:active, .dropdown-item {
+      height: 34px;
+      background-color:  transparent !important;
+      &:first-child{
+        color:  ${(props) => props.theme.stnk.color.text} !important;
+      }
+      span {
+        transition: all linear 0.1s;
+        padding-left: 0px;
+      }
+    }
+    .dropdown-item:hover > span{
+      padding-left: 10px;
+    }
+  }
+  .btn.btn-secondary, .bzukQN > div > button.btn.btn-secondary:hover,
+  .btn.btn-secondary > span,
+  .bzukQN > div > button.btn.btn-secondary:focus,
+  .bzukQN > div > button.btn.btn-secondary:active {
+    background-color: transparent !important;
+    color: ${(props) => props.theme.stnk.color.text} !important;
+    box-shadow: none !important;
   }
   button > p {
     color: ${(props) => props.theme.stnk.color.primary} !important;
@@ -125,18 +256,6 @@ const GlobalStyle = createGlobalStyle`
   .input-group-addon {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-  }
-
-  .btn-secondary:not(:disabled):not(.disabled):active:focus,
-  .btn-secondary:not(:disabled):not(.disabled).active:focus,
-  .btn-secondary,
-  .show > .btn-secondary.dropdown-toggle:focus {
-    &:focus, &:active, &:hover, &.focus {
-      box-shadow: 0 0 0 0px rgba(134,142,150,0.5);
-      color: rgb(51, 55, 64);
-      background-color: rgb(250, 250, 251) !important;
-
-    }
   }
 
   /*

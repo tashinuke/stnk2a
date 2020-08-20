@@ -1,4 +1,6 @@
 {
+  "Article": "Статьи",
+  "Categories":"Категории",
   "Analytics": "Аналитика",
   "Auth.form.button.forgot-password": "Отправить письмо",
   "Auth.form.button.login": "Войти",
