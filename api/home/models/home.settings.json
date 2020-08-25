@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.banner"
+    },
+    "title": {
+      "type": "string",
+      "default": "Блог пользователя tashinuke"
+    },
+    "description": {
+      "type": "text",
+      "default": "Просто блог"
+    }
+  }
+}

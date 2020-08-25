@@ -14,6 +14,9 @@
       "type": "string",
       "required": true
     },
+    "description": {
+      "type": "string"
+    },
     "content": {
       "type": "richtext",
       "required": true
@@ -33,12 +36,21 @@
       "via": "articles"
     },
     "autor": {
+      "via": "articles",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "articles"
+      "model": "user"
     },
     "show": {
       "type": "boolean"
+    },
+    "generated_banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

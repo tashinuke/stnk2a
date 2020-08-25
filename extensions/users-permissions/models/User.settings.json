@@ -54,8 +54,19 @@
       "configurable": false
     },
     "articles": {
-      "via": "autor",
-      "collection": "article"
+      "collection": "article",
+      "via": "autor"
+    },
+    "position": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "blue",
+        "red",
+        "green"
+      ]
     }
   }
 }
