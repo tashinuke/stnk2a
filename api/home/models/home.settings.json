@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "homes",
+  "collectionName": "homepage",
   "info": {
-    "name": "Home"
+    "name": "Homepage"
   },
   "options": {
     "increments": true,
