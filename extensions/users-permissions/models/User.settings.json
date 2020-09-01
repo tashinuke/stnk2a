@@ -54,8 +54,8 @@
       "configurable": false
     },
     "articles": {
-      "via": "autor",
-      "collection": "article"
+      "collection": "article",
+      "via": "autor"
     },
     "position": {
       "type": "string"
@@ -67,6 +67,15 @@
         "red",
         "green"
       ]
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
