@@ -13,7 +13,12 @@
       "type": "integer"
     },
     "Who": {
-      "type": "boolean"
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "both"
+      ]
     }
   }
 }
