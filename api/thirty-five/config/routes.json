@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/thirty-five",
+      "handler": "thirty-five.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/thirty-five",
+      "handler": "thirty-five.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/thirty-five",
+      "handler": "thirty-five.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

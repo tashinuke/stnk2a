@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_lessons",
+  "info": {
+    "name": "Lesson",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Cabinet": {
+      "type": "integer"
+    },
+    "Who": {
+      "type": "boolean"
+    }
+  }
+}

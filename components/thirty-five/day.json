@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_thirty_five_days",
+  "info": {
+    "name": "Day",
+    "icon": "calendar-day"
+  },
+  "options": {},
+  "attributes": {
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "thirty-five.lesson"
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}

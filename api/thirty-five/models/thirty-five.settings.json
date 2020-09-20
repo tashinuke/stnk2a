@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "thirty_fives",
+  "info": {
+    "name": "Thirty five"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Shedule": {
+      "type": "component",
+      "repeatable": true,
+      "component": "thirty-five.day"
+    }
+  }
+}
