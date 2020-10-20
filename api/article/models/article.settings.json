@@ -27,18 +27,14 @@
       "plugin": "upload",
       "required": true
     },
-    "published_at": {
-      "type": "datetime",
-      "required": false
-    },
     "category": {
       "model": "category",
       "via": "articles"
     },
     "autor": {
-      "via": "articles",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "articles"
     },
     "show": {
       "type": "boolean"

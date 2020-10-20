@@ -54,8 +54,8 @@
       "configurable": false
     },
     "articles": {
-      "collection": "article",
-      "via": "autor"
+      "via": "autor",
+      "collection": "article"
     },
     "position": {
       "type": "string"
