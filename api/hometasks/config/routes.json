@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hometasks",
+      "handler": "hometasks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hometasks/count",
+      "handler": "hometasks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hometasks/:id",
+      "handler": "hometasks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hometasks",
+      "handler": "hometasks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hometasks/:id",
+      "handler": "hometasks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hometasks/:id",
+      "handler": "hometasks.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "thirty_fives",
   "info": {
-    "name": "Thirty five"
+    "name": "Thirty five (d)",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Shedule": {

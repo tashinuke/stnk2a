@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hometasks",
+  "info": {
+    "name": "Hometasks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "orderOfLesson": {
+      "type": "integer",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
