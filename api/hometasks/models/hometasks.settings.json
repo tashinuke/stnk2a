@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "hometasks",
   "info": {
-    "name": "Hometasks"
+    "name": "Hometasks",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,12 +15,12 @@
       "type": "date",
       "required": true
     },
-    "orderOfLesson": {
-      "type": "integer",
-      "required": true
-    },
     "content": {
       "type": "richtext",
+      "required": true
+    },
+    "nameOfLesson": {
+      "type": "string",
       "required": true
     }
   }
