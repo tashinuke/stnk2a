@@ -88,6 +88,7 @@ public/uploads/*
 ############################
 
 package-lock.json
+pnpm-lock.yaml
 lib-cov
 lcov.info
 pids
